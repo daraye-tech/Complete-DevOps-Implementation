@@ -145,6 +145,12 @@ Automated workflows in [`.github/workflows/ci.yml`](.github/workflows/ci.yml):
 
 ---
 
+### Grafana Dashboard
+
+![Grafana Dashboard](./static/images/grafan.png)  
+*Live monitoring dashboard built using Prometheus + Grafana for Kubernetes workloads.*
+---
+
 ## License
 
 Apache License 2.0
