@@ -1,19 +1,147 @@
 # Go Web Application
 
-This is a simple website written in Golang. It uses the `net/http` package to serve HTTP requests.
+This repository demonstrates a complete DevOps implementation for a simple Golang web application. It covers source code, containerization, Kubernetes deployment, Helm packaging, Terraform infrastructure, and CI/CD automation.
 
-## Running the server
+---
 
-To run the server, execute the following command:
+## Features
+
+- **Golang Web Server:** Serves static HTML pages (`home`, `about`, `contact`, `courses`) using Go's `net/http`.
+- **Dockerized:** Multi-stage Docker build for efficient, secure containers.
+- **Kubernetes Ready:** Raw manifests and Helm chart for easy deployment.
+- **Terraform Infrastructure:** AWS VPC, EKS cluster, security groups.
+- **CI/CD:** Automated build, test, lint, Docker push, and Helm tag update via GitHub Actions.
+
+---
+
+## Directory Structure
+
+```
+.
+├── main.go                # Go web server
+├── main_test.go           # Unit tests
+├── static/                # HTML & images
+├── Dockerfile             # Container build
+├── helm/                  # Helm chart
+├── k8s/                   # Kubernetes manifests
+├── terraform/             # AWS infra as code
+├── .github/workflows/     # CI/CD pipeline
+├── go.mod                 # Go modules
+├── README.md              # Documentation
+└── LICENSE                # Apache 2.0
+```
+
+---
+
+## Running Locally
 
 ```bash
 go run main.go
 ```
+Visit: [http://localhost:8080/courses](http://localhost:8080/courses)
 
-The server will start on port 8080. You can access it by navigating to `http://localhost:8080/courses` in your web browser.
+---
 
-## Looks like this
+## Screenshots
 
-![Website](static/images/golang-website.png)
+### 1. Courses Page
+
+![Courses Page](./static/images/courses-screenshot.png)
+*Learn DevOps With Dahir Khalif – Courses section of the web app.*
+
+---
+
+### 2. AWS Documentation Example
+
+![AWS Documentation](./static/images/aws-doc-screenshot.png)
+*Example documentation for AWS Network Load Balancer integration.*
+
+---
+
+### 3. Terraform EKS Cluster Code
+
+![Terraform EKS Cluster](./static/images/terraform-eks-screenshot.png)
+*Terraform code for provisioning AWS EKS cluster.*
+
+---
+
+### 4. Dockerfile in VS Code
+
+![Dockerfile](./static/images/dockerfile-screenshot.png)
+*Multi-stage Dockerfile for building and packaging the Go app.*
+
+---
+
+### 5. GitHub Actions CI/CD Workflow
+
+![GitHub Actions](./static/images/github-actions-screenshot.png)
+*Automated CI/CD pipeline for build, test, lint, Docker push, and Helm update.*
+
+---
+
+### 6. ArgoCD Application Sync
+
+![ArgoCD Sync](./static/images/argocd-screenshot.png)
+*ArgoCD dashboard showing healthy, synced Kubernetes resources.*
+
+---
+
+## Docker
+
+```bash
+docker build -t go-web-app .
+docker run -p 8080:8080 go-web-app
+```
+
+---
+
+## Kubernetes
+
+Apply manifests:
+```bash
+kubectl apply -f k8s/manifests/
+```
+
+Or install via Helm:
+```bash
+helm install go-web-app ./helm/go-web-app-chart
+```
+
+---
+
+## Terraform (AWS EKS)
+
+```bash
+cd terraform
+terraform init
+terraform apply
+```
+
+---
+
+## CI/CD
+
+Automated workflows in [`.github/workflows/ci.yml`](.github/workflows/ci.yml):
+
+- Build & test
+- Lint
+- Docker build & push
+- Helm chart tag update
+
+---
+
+## License
+
+Apache License 2.0
+
+---
+
+## Author
+
+Dahir Khalif
+
+---
+
+Feel free to contribute or open issues for improvements!
 
 
