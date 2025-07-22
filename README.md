@@ -46,42 +46,42 @@ Visit: [http://localhost:8080/courses](http://localhost:8080/courses)
 
 ### 1. Courses Page
 
-![Courses Page](./static/images/courses-screenshot.png)
+![Courses Page](./static/images/running-app.png)
 *Learn DevOps With Dahir Khalif – Courses section of the web app.*
 
 ---
 
 ### 2. AWS Documentation Example
 
-![AWS Documentation](./static/images/aws-doc-screenshot.png)
+![AWS Documentation](./static/images/ingress-controller.png)
 *Example documentation for AWS Network Load Balancer integration.*
 
 ---
 
 ### 3. Terraform EKS Cluster Code
 
-![Terraform EKS Cluster](./static/images/terraform-eks-screenshot.png)
+![Terraform EKS Cluster](./static/images/Eks.png)
 *Terraform code for provisioning AWS EKS cluster.*
 
 ---
 
 ### 4. Dockerfile in VS Code
 
-![Dockerfile](./static/images/dockerfile-screenshot.png)
+![Dockerfile](./static/images/Dockerfile.png)
 *Multi-stage Dockerfile for building and packaging the Go app.*
 
 ---
 
 ### 5. GitHub Actions CI/CD Workflow
 
-![GitHub Actions](./static/images/github-actions-screenshot.png)
+![GitHub Actions](./static/images/ci-d.png)
 *Automated CI/CD pipeline for build, test, lint, Docker push, and Helm update.*
 
 ---
 
 ### 6. ArgoCD Application Sync
 
-![ArgoCD Sync](./static/images/argocd-screenshot.png)
+![ArgoCD Sync](./static/images/argcd.png)
 *ArgoCD dashboard showing healthy, synced Kubernetes resources.*
 
 ---
