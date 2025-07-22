@@ -1,6 +1,6 @@
 # Complete DevOps Implementation – Go Web Application
 
-This project showcases a full end-to-end DevOps pipeline for a Golang-based web application. It includes source code, containerization, Kubernetes deployment, Helm chart management, infrastructure as code (Terraform on AWS), and CI/CD automation using GitHub Actions and GitOps with ArgoCD.
+This project showcases a full end-to-end DevOps pipeline for a Golang-based web application. It includes source code, containerization, Kubernetes deployment, Helm chart management, infrastructure as code (Terraform on AWS), and CI/CD automation using GitHub Actions and GitOps with ArgoCD. It also features Prometheus and Grafana integration for real-time Kubernetes monitoring and observability.
 
 ![Go](https://img.shields.io/badge/Go-1.22-blue)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-informational)
