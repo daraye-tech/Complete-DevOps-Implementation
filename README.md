@@ -34,18 +34,17 @@ This project showcases a full end-to-end DevOps pipeline for a Golang-based web 
 
 ```
 .
-├── main.go                # Go web server
-├── main_test.go           # Unit tests
-├── static/                # HTML & images
-├── Dockerfile             # Container build
-├── helm/                  # Helm chart
-├── k8s/                   # Kubernetes manifests
-├── terraform/             # AWS infra as code
-├── .github/workflows/     # CI/CD pipeline
-├── go.mod                 # Go modules
-├── README.md              # Documentation
-└── LICENSE                # Apache 2.0
-```
+├── main.go # Go web server
+├── main_test.go # Unit tests
+├── static/ # HTML & images
+├── Dockerfile # Container build
+├── helm/ # Helm chart
+├── k8s/ # Kubernetes manifests
+├── terraform/ # AWS infra as code
+├── .github/workflows/ # CI/CD pipeline
+├── go.mod # Go modules
+├── README.md # Documentation
+└── LICENSE # Apache 2.0
 
 ---
 
