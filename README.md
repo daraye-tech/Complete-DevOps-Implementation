@@ -1,6 +1,12 @@
-# Go Web Application
+# Complete DevOps Implementation – Go Web Application
 
-This repository demonstrates a complete DevOps implementation for a simple Golang web application. It covers source code, containerization, Kubernetes deployment, Helm packaging, Terraform infrastructure, and CI/CD automation.
+This project showcases a full end-to-end DevOps pipeline for a Golang-based web application. It includes source code, containerization, Kubernetes deployment, Helm chart management, infrastructure as code (Terraform on AWS), and CI/CD automation using GitHub Actions and GitOps with ArgoCD.
+
+![Go](https://img.shields.io/badge/Go-1.22-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-informational)
+![Kubernetes](https://img.shields.io/badge/K8s-Production--Ready-blueviolet)
+![Terraform](https://img.shields.io/badge/Terraform-AWS--EKS-5932a8)
+![CI](https://github.com/daraye-tech/Complete-DevOps-Implementation/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -9,10 +15,20 @@ This repository demonstrates a complete DevOps implementation for a simple Golan
 - **Golang Web Server:** Serves static HTML pages (`home`, `about`, `contact`, `courses`) using Go's `net/http`.
 - **Dockerized:** Multi-stage Docker build for efficient, secure containers.
 - **Kubernetes Ready:** Raw manifests and Helm chart for easy deployment.
-- **Terraform Infrastructure:** AWS VPC, EKS cluster, security groups.
-- **CI/CD:** Automated build, test, lint, Docker push, and Helm tag update via GitHub Actions.
+- **Terraform Infrastructure:** AWS VPC, EKS cluster, and security groups.
+- **CI/CD Automation:** GitHub Actions for build, test, lint, Docker push, and Helm tag update.
+- **ArgoCD Integration:** GitOps-based continuous delivery and deployment status monitoring.
 
 ---
+
+## Prerequisites
+
+- Go 1.22+
+- Docker
+- kubectl
+- Helm
+- Terraform
+- AWS CLI configured
 
 ## Directory Structure
 
