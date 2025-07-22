@@ -60,7 +60,6 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
-        push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-web-app:${{github.run_id}}
 
   update-newtag-in-helm-chart:
